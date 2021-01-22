@@ -14,15 +14,15 @@
     <header class="header">
       <div class="page__container">
         <div class="header__circle">
-          <p class="header_date">02</p>
-          <p class="header_text">ФЕВРАЛЯ</p>
+          <p class="header__date">02</p>
+          <p class="header__text">ФЕВРАЛЯ</p>
         </div>
         <h1 class="header__title">Онлайн-встреча для бизнеса Москвы</h1>
         <h2 class="header__subtitle">Поддержка бизнеса в Москве: от регистрации компании до финансирования</h2>
         <a href="#registration" class="header__btn">Принять участие</a>
       </div>
     </header>
-    <main class="content" id="1">
+    <main class="content">
       <section class="useful">
         <div class="page__container">
           <h2 class="useful__title">Для кого</h2>
@@ -47,7 +47,6 @@
           <a href="#registration" class="expert__btn">Задать вопрос</a>
         </div>
       </section>
-
       <section class="recognize">
         <div class="page__container">
           <h2 class="recognize__title">Вы узнаете</h2>
@@ -80,49 +79,46 @@
         </div>
       </section>
       <section class="info">
-        <div class="info__wrapper">
-          <div class="page__container">
-            <div class="info_row">
-              <ul class="info__items">
-                <li class="info__item">
-                  <h3 class="info__title">Дата проведения</h3>
-                  <p class="info_text">02.02.2021</p>
-                </li>
-                <li class="info__item">
-                  <h3 class="info__title">Формат участия</h3>
-                  <p class="info_text">Онлайн (после регистрации)</p>
-                </li>
-                <li class="info__item">
-                  <h3 class="info__title">Продолжительность</h3>
-                  <p class="info_text">< 2 часов</p>
-                </li>
-              </ul>
-            </div>
-            <div class="info__line"></div>
-            <div class="info_row">
-              <ul class="info__items">
-                <li class="info__item">
-                  <h3 class="info__title">Модератор</h3>
-                  <p class="info_text">Рамаз Чиаурели</p>
-                </li>
-                <li class="info__item">
-                  <h3 class="info__title">Спикеры</h3>
-                  <p class="info_text">УФНС России по Москве, ДПиИР, ГБУ “МБМ”</p>
-                </li>
-                <li class="info__item">
-                  <h3 class="info__title">Возможности</h3>
-                  <p class="info_text">Задать вопрос онлайн</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <div class="page__container">
-          <a href="#registration" class="info__btn">Регистрация</a>
+          <div class="info_row">
+            <ul class="info__items">
+              <li class="info__item">
+                <h3 class="info__title">Дата проведения</h3>
+                <p class="info__text">02.02.2021</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__title">Формат участия</h3>
+                <p class="info__text">Онлайн (после регистрации)</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__title">Продолжительность</h3>
+                <p class="info__text">< 2 часов</p>
+              </li>
+            </ul>
+          </div>
+          <div class="info__line"></div>
+          <div class="info_row">
+            <ul class="info__items">
+              <li class="info__item">
+                <h3 class="info__title">Модератор</h3>
+                <p class="info__text">Рамаз Чиаурели</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__title">Спикеры</h3>
+                <p class="info__text">УФНС России по Москве, ДПиИР, ГБУ “МБМ”</p>
+              </li>
+              <li class="info__item">
+                <h3 class="info__title">Возможности</h3>
+                <p class="info__text">Задать вопрос онлайн</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="registration">
         <div class="page__container">
+          <a href="#registration" class="registration_anchor">Регистрация</a>
+          <div class="registration__arrow"></div>
           <h2 class="registration__title" id="registration">Регистрация на онлайн-встречу</h2>
           <form action="" class="registration__form" name="reg">
             <input type="text" placeholder="Имя" class="registration__input registration__input_type_req registration__input_type_name" required>
@@ -131,14 +127,15 @@
             <input type="text" placeholder="Организация" class="registration__input registration__input_type_req registration__input_type_company" required>
             <input type="tel" placeholder="Телефон" class="registration__input registration__input_type_req registration__input_type_phone" required>
             <input type="email" placeholder="Электронная почта" class="registration__input registration__input_type_req registration__input_type_email" required>
-            <input type="text" placeholder="Хочу заранее задать вопрос..." class="registration__input registration__input_type_early-q">
-            <input type="text" placeholder="Я столкнулся со следующей проблемой..." class="registration__input registration__input_type_problem">
-            <input type="text" placeholder="Я готов участвовать в улучшении бизнес-климата в Москве" class="registration__input registration__input_type_ready">
+            <textarea type="text" placeholder="Хочу заранее задать вопрос..." class="registration__textarea  registration__textarea_type_early-q"></textarea>
+            <textarea type="text" placeholder="Я столкнулся со следующей проблемой..." class="registration__textarea  registration__textarea_type_problem"></textarea>
+            <textarea type="text" placeholder="Я готов участвовать в улучшении бизнес-климата в Москве" class="registration__textarea  registration__textarea_type_ready"></textarea>
             <button type="submit" class="registration__btn">Готово</button>
           </form>
         </div>
       </section>
     </main>
   </div>
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
