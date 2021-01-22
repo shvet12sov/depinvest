@@ -47,24 +47,36 @@
   position: absolute;
   font-style: normal;
   font-weight: bold;
-  font-size: 135px;
+  font-size: 110px;
   line-height: 1.2;
   text-align: center;
   margin: 0;
   top: 126px;
-  left: 168px;
+  left: 181px;
 }
 
 .header__text {
   position: absolute;
   font-style: normal;
   font-weight: bold;
-  font-size: 33px;
+  font-size: 25px;
   line-height: 46px;
   text-align: center;
   margin: 0;
-  top: 254px;
-  left: 170px;
+  top: 228px;
+  left: 190px;
+
+}
+
+.header__time {
+  position: absolute;
+  margin: 0;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 1.15;
+  top: 263px;
+  left: 191px;
 }
 
 .header__subtitle {
@@ -103,6 +115,11 @@
   line-height: 1.2;
   color: #000657;
   text-decoration: none;
+}
+
+.header__btn:hover {
+  opacity: .8;
+  transition: opacity .3s ease-out;
 }
 
 .useful {
@@ -221,6 +238,11 @@
   text-decoration: none;
 }
 
+.expert__btn:hover {
+  opacity: .8;
+  transition: opacity .3s ease-out;
+}
+
 .recognize {
   display: flex;
   justify-content: center;
@@ -242,7 +264,7 @@
   max-width: 950px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
   padding: 0;
   margin: auto;
@@ -345,7 +367,7 @@
   padding: 157px 0 50px 0;
 }
 
-.registration_anchor {
+.registration__anchor {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -362,6 +384,11 @@
   text-decoration: none;
 }
 
+.registration__anchor:hover {
+  opacity: .8;
+  transition: opacity .3s ease-out;
+}
+
 .registration__arrow {
   width: 112px;
   height: 45px;
@@ -375,7 +402,7 @@
 }
 
 .registration__title {
-  margin: 0 0 57px 0;
+  margin: 0 auto 57px auto;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -491,6 +518,11 @@
   border-radius: 44px;
 }
 
+.registration__btn:hover {
+  opacity: .8;
+  transition: opacity .3s ease-out;
+}
+
 .registration__input_type_req {
   background-image: url(../images/_.svg);
   background-repeat: no-repeat;
@@ -509,15 +541,21 @@
   }
 
   .header__date {
-    font-size: 90px;
-    top: 101px;
-    left: 134px;
+    font-size: 76px;
+    top: 96px;
+    left: 141px;
   }
 
   .header__text {
-    font-size: 23px;
-    top: 186px;
-    left: 131px;
+    font-size: 20px;
+    top: 163px;
+    left: 139px;
+  }
+
+  .header__time {
+    font-size: 34px;
+    top: 196px;
+    left: 142px;
   }
 
   .header__title {
@@ -623,7 +661,7 @@
     background-position: inherit;
   }
 
-  .registration_anchor {
+  .registration__anchor {
     width: 202px;
     height: 41px;
     font-size: 18px;
@@ -690,12 +728,20 @@
 
   .header__date {
     top: 74px;
-    left: 106px;
+    font-size: 72px;
+    left: 116px;
   }
 
   .header__text {
-    top: 155px;
-    left: 104px;
+    top: 135px;
+    left: 116px;
+    font-size: 18px;
+  }
+
+  .header__time {
+    font-size: 32px;
+    top: 167px;
+    left: 117px;
   }
 
   .header__title {
@@ -789,6 +835,7 @@
 
   .registration__title {
     font-size: 24px;
+    max-width: 200px;
   }
 
 }
