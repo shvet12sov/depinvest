@@ -32,6 +32,7 @@
 }
 
 .header__circle {
+  width: 100%;
   position: relative;
   margin: 0 auto;
   width: 487px;
@@ -51,7 +52,7 @@
   text-align: center;
   margin: 0;
   top: 126px;
-  left: 186px;
+  left: 168px;
 }
 
 .header__text {
@@ -63,7 +64,7 @@
   text-align: center;
   margin: 0;
   top: 254px;
-  left: 186px;
+  left: 170px;
 }
 
 .header__subtitle {
@@ -510,13 +511,13 @@
   .header__date {
     font-size: 90px;
     top: 101px;
-    left: 144px;
+    left: 134px;
   }
 
   .header__text {
     font-size: 23px;
     top: 186px;
-    left: 144px;
+    left: 131px;
   }
 
   .header__title {
@@ -676,6 +677,10 @@
 
 @media screen and (max-width: 425px) {
 
+  .page__width {
+    width: 100%;
+  }
+
   .header__circle {
     width: 310px;
     height: 288px;
@@ -683,12 +688,12 @@
 
   .header__date {
     top: 74px;
-    left: 117px;
+    left: 106px;
   }
 
   .header__text {
     top: 155px;
-    left: 115px;
+    left: 104px;
   }
 
   .header__title {
