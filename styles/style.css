@@ -434,7 +434,7 @@
   align-items: center;
   justify-content: center;
   resize: none;
-  padding-top: 7px;
+  padding-top: 15px;
 }
 
 .registration__textarea:last-of-type {
@@ -462,7 +462,7 @@
   color: rgba(255, 255, 255, 0.65);
   display: flex;
   white-space: nowrap;
-  padding-top: 5px;
+  padding-top: -5px;
 }
 
 .registration__input:focus::placeholder {
@@ -662,10 +662,12 @@
     height: 41px;
     margin-bottom: 22px;
     font-size: 14px;
+    padding-top: 10px;
   }
 
   .registration__textarea::placeholder {
     font-size: 14px;
+    padding-top: -15px;
   }
 
   .registration__textarea_type_req {
@@ -777,7 +779,7 @@
 
   .registration__textarea::placeholder{
     white-space: pre-line;
-    padding-top: 3px;
+    padding-top: -3px;
 
   }
 
