@@ -36,9 +36,9 @@
   margin: 0 auto;
   width: 487px;
   height: 450px;
-  background-image: url(../images/header__circle.svg);
+  background-image: url(../images/header_circle.png);
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: 0 -12px;
   background-size: cover;
 }
 
@@ -675,6 +675,22 @@
 
 
 @media screen and (max-width: 425px) {
+
+  .header__circle {
+    width: 310px;
+    height: 288px;
+  }
+
+  .header__date {
+    top: 74px;
+    left: 117px;
+  }
+
+  .header__text {
+    top: 155px;
+    left: 115px;
+  }
+
   .header__title {
     font-size: 22px;
     line-height: 25px;
