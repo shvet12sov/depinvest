@@ -449,6 +449,11 @@
   margin: 0 auto;
 }
 
+.registration__label:focus {
+  background: transparent;
+  outline: 0;
+}
+
 .registration__label:last-of-type {
   padding-bottom: 72px;
 }
