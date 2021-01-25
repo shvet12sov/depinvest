@@ -439,6 +439,61 @@
   box-sizing: box-sizing;
 }
 
+.registration__label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 589px;
+  width: 100%;
+  padding-bottom: 15px;
+  margin: 0 auto;
+}
+
+.registration__label:last-of-type {
+  padding-bottom: 72px;
+}
+
+.checkbox__link {
+ text-decoration: none;
+ color: rgba(255, 255, 255, 0.65);
+}
+
+.checkbox__link:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+ }
+
+.registration__input_el_agree {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.checkbox__visible {
+  display: inline-block;
+  vertical-align: middle;
+  width: 26px;
+  height: 26px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.registration__input_el_agree:checked + .checkbox__visible {
+  background-image: url(../images/checked.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 14px;
+  background-position: center;
+}
+.checkbox__text {
+  display: block;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 19px;
+  line-height: 1.2;
+}
+
 .registration__textarea {
   max-width: 589px;
   width: 100%;
@@ -462,10 +517,6 @@
   justify-content: center;
   resize: none;
   padding-top: 15px;
-}
-
-.registration__textarea:last-of-type {
-  margin-bottom: 73px;
 }
 
 .registration__input::placeholder {
@@ -686,6 +737,10 @@
     font-size: 14px;
   }
 
+  .registration__label {
+    width: 443px;
+  }
+
   .registration__input::placeholder {
     font-size: 14px;
   }
@@ -711,6 +766,11 @@
   .registration__textarea_type_req {
     background-position: 420px 5px;
     background-size: 8px;
+  }
+
+  .checkbox__text {
+    max-width: 443px;
+    font-size: 14px;
   }
 }
 
@@ -836,6 +896,27 @@
   .registration__title {
     font-size: 24px;
     max-width: 200px;
+  }
+
+  .checkbox__visible {
+    width: 37px;
+    height: 37px;
+  }
+
+  .checkbox__text {
+    max-width: 224px;
+    font-size: 14px;
+}
+
+  .registration__input_el_agree:checked + .checkbox__visible {
+    background-image: url(../images/checked.svg);
+    background-repeat: no-repeat;
+    background-size: 18px 19px;
+    background-position: center;
+  }
+
+  .registration__label {
+    max-width: 275px;
   }
 
 }
